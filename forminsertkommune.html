@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insert Kommune</title>
+  <script src="/js/insertkommune.js" defer></script>
+
+</head>
+<body>
+<h1>Insert kommune</h1>
+
+<div>
+  <form action="http://localhost:8080/kommune" method="post" id="newKommuneForm">
+    <label for="inpCode">Kommune kode</label>
+    <input type="number" name="kommuneKode" placeholder="eks 101" id="inpCode">
+
+    <label for="inpName">Kommune navn</label>
+    <input type="text" name="kommune" placeholder="København" id="inpName">
+
+
+    <button type="submit" title="den gemmer ved tryk" id="submit" >Opret</button>
+  </form>
+
+
+
+</div>
+
+</body>
+</html>

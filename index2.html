@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find mine kommuner</title>
+  <script src="/js/fetchkommune.js" defer></script>
+  <script src="/js/createatags.js" defer></script>
+  <script src="/js/createkomtable.js" defer></script>
+
+</head>
+
+<body>
+
+<label for="inp1">Indtast region</label>
+<input type="text" id="inp1" class="first">
+
+<!--
+<button class="pbGet">Hent kommuner</button>
+-->
+<button class="pbShowKomMap">Show kommune map</button>
+
+<button class="pbCreateATag">Create A Tag</button>
+
+<br>
+
+<button class="pbCreateTable">Lav kommune tabel</button>
+
+<div id="komtags"></div>
+
+<div id="div1">
+  <h1>Kommuner</h1>
+  <table class="table" id="kommune_table">
+    <tr>
+      <th>Kommune kode</th>
+      <th>Kommune navn</th>
+      <th>Region kode</th>
+      <th>Region navn</th>
+      <th>Region link</th>
+      <th>Status</th>
+      <th>Toogle checkbox</th>
+      <th>Slet kommune</th>
+    </tr>
+  </table>
+
+</div>
+
+<br>
+<a href="forminsertkommune.html">Insert ny kommune</a>
+
+
+</body>
+</html>
