@@ -60,7 +60,7 @@ function addRow(kommune) {
   pbUpdate.type = "button";
   pbUpdate.setAttribute("value", "Update Kommune xxx");
   pbUpdate.onclick = function () {
-   // kommune.kommune = kommuneInput.value;
+   kommune.kommune = kommuneInput.value;
     out("YYYY");
     out(kommune);
     const chg  = kommuneInput.value;
@@ -76,7 +76,7 @@ function addRow(kommune) {
 }
 
 
-function createTableFromMap(btn) {
+function createTableFromMap() {
   out("create table");
   for (const komKey of kommuneMap.keys()) {
     const kom1 = kommuneMap.get(komKey);
